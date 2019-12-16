@@ -67,11 +67,6 @@
 </template>
 <script>
 export default {
-  created() {
-    this.$http.get("http://localhost:3000/users").then(response => {
-      this.users = response.body;
-    });
-  },
   data() {
     return {
       page: 1,
@@ -90,7 +85,17 @@ export default {
         { text: "", value: "", align: "center" },
         { text: "AÇÕES", value: "actions", align: "center" }
       ],
-      users: []
+      users: [
+            {"id": 1, "user": "ANPINA", "email": "antonio.pina@tvglobo.com.br", "incluseDate": "28/05/2019", "alterDate": "30/05/2019", "rules": 1, "status": true, "hover": false},
+            {"id": 2, "user": "CCHANG", "email": "ciro.chang@tvglobo.com.br", "incluseDate": "28/05/2019", "alterDate": "30/05/2019", "rules": 1, "status": true, "hover": false},
+            {"id": 3, "user": "TMARCAL", "email": "thiago.marcal@tvglobo.com.br", "incluseDate": "28/05/2019", "alterDate": "30/05/2019", "rules": 1, "status": false, "hover": false},
+            {"id": 4, "user": "ECGIANN", "email": "ecgiannotto@tvglobo.com.br", "incluseDate": "28/05/2019", "alterDate": "30/05/2019", "rules": 1, "status": true, "hover": false},
+            {"id": 5, "user": "YFERNAND", "email": "yuri.vasquez@tvglobo.com.br", "incluseDate": "28/05/2019", "alterDate": "30/05/2019", "rules": 2, "status": false, "hover": false},
+            {"id": 6, "user": "PLACERDA", "email": "pedro.soares.larceda@tvglobo.com.br", "incluseDate": "28/05/2019", "alterDate": "30/05/2019", "rules": 2, "status": true, "hover": false},
+            {"id": 7, "user": "JOGATINA", "email": "joao.agular@tvglobo.com.br", "incluseDate": "28/05/2019", "alterDate": "30/05/2019", "rules": 2, "status": true, "hover": false},
+            {"id": 8, "user": "SARADA", "email": "sara.silva@tvglobo.com.br", "incluseDate": "28/05/2019", "alterDate": "30/05/2019", "rules": 1, "status": true, "hover": false},
+            {"id": 9, "user": "FAMAOL", "email": "fabio.oliveira@tvglobo.com.br", "incluseDate": "28/05/2019", "alterDate": "30/05/2019", "rules": 1, "status": true, "hover": false}
+        ]
     };
   },
   methods: {
