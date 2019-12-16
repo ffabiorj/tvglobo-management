@@ -2,6 +2,7 @@
   <v-app class="grey light-4">
     <Navbar />
     <v-content>
+    <Table />
       <router-view></router-view>      
     </v-content>
   </v-app>
@@ -9,10 +10,11 @@
 
 <script>
 import Navbar from '@/components/Navbar'
+import Table from '@/components/Table'
 
 export default {
   name: 'App',
-  components: {Navbar},
+  components: {Navbar, Table},
   data: () => ({
     //
   }),
