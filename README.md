@@ -1,4 +1,4 @@
-# tvglobo-management
+# TV Globo Management
 
 ## Project setup
 ```
@@ -10,20 +10,7 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Observações
 ```
-npm run build
+Troquei dois icons do app, um porque não achei um similar e outro não estava renderizando. Como eu não tinha nenhuma experiência com Vuejs eu fui estudando e criando app, tentei deixar o máximo possível igual o design UI proposto. Não estava proposto deixar a paginação funcionando, mas como eu utilizei um componente que facilitava o mesmo, eu acabei deixando o funcional. A fonte do botão da paginação está diferente porque o próprio componente cria a class automaticamente e eu não achei uma maneira de alterar esse comportamento.
 ```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
